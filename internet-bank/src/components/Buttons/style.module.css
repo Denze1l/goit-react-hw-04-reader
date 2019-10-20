@@ -1,0 +1,33 @@
+.button {
+  width: 150px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: rgb(18, 18, 214);
+  border: none;
+  color: #fff;
+  font-family: serif;
+  font-weight: 500;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 3px solid rgb(18, 7, 83);
+}
+
+.button:active {
+  background-color: rgb(47, 47, 243);
+}
+
+.button[disabled] {
+  pointer-events: none;
+  background-color: #bdbdbd;
+}
+
+.controls {
+  padding-top: 40px;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
