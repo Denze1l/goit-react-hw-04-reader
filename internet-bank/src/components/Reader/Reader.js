@@ -19,11 +19,7 @@ class Reader extends Component {
     const { history, location } = this.props;
     const articleObj = queryString.parse(location.search);
     const aticleNumber = Number(articleObj.item);
-    if (
-      aticleNumber < PubList.length ||
-      aticleNumber >= 1 ||
-      aticleNumber !== isNaN(aticleNumber)
-    ) {
+    if (aticleNumber > PubList.length || typeof aticleNumber === 'number') {
       history.push({
         pathname: '/reader',
         search: '?item=1',
